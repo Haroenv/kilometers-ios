@@ -18,29 +18,47 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Pjg-6B-LC6">
-                                <rect key="frame" x="20" y="206" width="560" height="199"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Pjg-6B-LC6">
+                                <rect key="frame" x="0.0" y="20" width="600" height="531"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="013-8C-fTw">
-                                        <rect key="frame" x="259" y="0.0" width="42" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="013-8C-fTw">
+                                        <rect key="frame" x="279" y="0.0" width="42" height="20"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RVK-QD-8qg">
-                                        <rect key="frame" x="259" y="21" width="42" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RVK-QD-8qg">
+                                        <rect key="frame" x="0.0" y="20" width="600" height="70"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="BqO-3j-mx6"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wnX-YF-2kh">
-                                        <rect key="frame" x="257" y="41" width="46" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wnX-YF-2kh">
+                                        <rect key="frame" x="277" y="90" width="46" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="6hp-x3-qzC"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="O3M-qW-Ehx"/>
+                                        </constraints>
                                         <state key="normal" title="Button"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="6hp-x3-qzC"/>
+                                            </mask>
+                                        </variation>
                                     </button>
-                                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="hX8-Oh-qQE">
-                                        <rect key="frame" x="160" y="71" width="240" height="128"/>
+                                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="hX8-Oh-qQE">
+                                        <rect key="frame" x="0.0" y="140" width="600" height="391"/>
                                     </mapView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="RVK-QD-8qg" firstAttribute="leading" secondItem="Pjg-6B-LC6" secondAttribute="leading" id="0XX-x0-8Pl"/>
+                                    <constraint firstItem="hX8-Oh-qQE" firstAttribute="leading" secondItem="Pjg-6B-LC6" secondAttribute="leading" id="Yk2-Iq-KFR"/>
+                                    <constraint firstAttribute="trailing" secondItem="hX8-Oh-qQE" secondAttribute="trailing" id="oag-ap-Odt"/>
+                                    <constraint firstAttribute="trailing" secondItem="RVK-QD-8qg" secondAttribute="trailing" id="pK3-1L-PK5"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -48,7 +66,11 @@
                             <constraint firstItem="Pjg-6B-LC6" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" id="6VZ-6m-fh5"/>
                             <constraint firstItem="Pjg-6B-LC6" firstAttribute="centerY" secondItem="tsR-hK-woN" secondAttribute="centerY" id="CZa-6t-CV7"/>
                             <constraint firstItem="Pjg-6B-LC6" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="GEC-Vc-hHp"/>
+                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="Pjg-6B-LC6" secondAttribute="bottom" id="Rl7-zV-z2K"/>
+                            <constraint firstItem="Pjg-6B-LC6" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="-20" id="TRT-v8-uSB"/>
+                            <constraint firstItem="Pjg-6B-LC6" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" id="cz8-Cq-eRY"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Pjg-6B-LC6" secondAttribute="trailing" id="hEY-Yy-Xy8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Pjg-6B-LC6" secondAttribute="trailing" constant="-20" id="zZd-hZ-pg0"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
@@ -68,7 +90,19 @@
                     <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="uAu-BI-3jd">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="uAu-BI-3jd" secondAttribute="trailing" constant="-20" id="78t-Pv-AAc"/>
+                            <constraint firstItem="uAu-BI-3jd" firstAttribute="top" secondItem="QS5-Rx-YEW" secondAttribute="topMargin" id="JvK-EV-sbz"/>
+                            <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="uAu-BI-3jd" secondAttribute="bottom" id="Xve-sE-zgo"/>
+                            <constraint firstItem="uAu-BI-3jd" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" constant="-20" id="iiM-yJ-M8m"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
                 </viewController>
