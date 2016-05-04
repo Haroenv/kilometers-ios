@@ -6,8 +6,8 @@ This app keeps track of how much you've traveled during a day, and allows you to
 
 # See also
 
-[kilometers-backend](https://github.com/haroenv/kilometers-backend)
-[kilometers (web landing page)](https://github.com/haroenv/kilometers)
+* [kilometers-backend](https://github.com/haroenv/kilometers-backend)
+* [kilometers (web landing page)](https://github.com/haroenv/kilometers)
 
 # License
 
