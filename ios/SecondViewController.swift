@@ -1,9 +1,7 @@
 //
 //  SecondViewController.swift
-//  ios
 //
 //  Created by Haroen Viaene on 02/05/16.
-//  Copyright © 2016 punchtime. All rights reserved.
 //
 
 import UIKit

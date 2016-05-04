@@ -69,6 +69,9 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
                     <connections>
+                        <outlet property="checkin" destination="wnX-YF-2kh" id="BpR-KL-sXs"/>
+                        <outlet property="city" destination="013-8C-fTw" id="GpR-tY-tzD"/>
+                        <outlet property="distance" destination="RVK-QD-8qg" id="cI3-SW-Lut"/>
                         <outlet property="map" destination="hX8-Oh-qQE" id="KMJ-lt-COx"/>
                     </connections>
                 </viewController>
