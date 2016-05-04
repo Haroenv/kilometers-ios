@@ -45,9 +45,6 @@ class FirstViewController: UIViewController, CLLocationManagerDelegate {
     }
     
     func getQuickLocationUpdate() {
-        // Request location authorization
-        self.locationManager.requestWhenInUseAuthorization()
-        
         // Request a location update
         self.locationManager.requestLocation()
         // Note: requestLocation may timeout and produce an error if authorization has not yet been granted by the user
