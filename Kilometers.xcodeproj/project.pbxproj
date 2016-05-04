@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1D4CC51E974B4519B47AB7ED /* libPods-KilometersTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D2A65188B4191C80FCFAAB9 /* libPods-KilometersTests.a */; };
+		49118F1ABF57FC95F97CBA8C /* Pods_KilometersUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A0F106DEE3BE7ADE6B8B8CD /* Pods_KilometersUITests.framework */; };
 		5BC5F2A51CD7CC5800568BC6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC5F2A41CD7CC5800568BC6 /* AppDelegate.swift */; };
 		5BC5F2A71CD7CC5800568BC6 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC5F2A61CD7CC5800568BC6 /* FirstViewController.swift */; };
 		5BC5F2A91CD7CC5800568BC6 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC5F2A81CD7CC5800568BC6 /* SecondViewController.swift */; };
@@ -17,8 +17,8 @@
 		5BC5F2BC1CD7CC5800568BC6 /* iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC5F2BB1CD7CC5800568BC6 /* iosTests.swift */; };
 		5BC5F2C71CD7CC5800568BC6 /* iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC5F2C61CD7CC5800568BC6 /* iosUITests.swift */; };
 		5BC5F2D51CD7CDDE00568BC6 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BC5F2D41CD7CDDE00568BC6 /* MapKit.framework */; };
-		7909DE5C735DD3582CB645E2 /* libPods-KilometersUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 906A5F2BE3BAF3AA37AEB811 /* libPods-KilometersUITests.a */; };
-		90BFD4182FD5134687FAAA96 /* libPods-Kilometers.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5119BB968B71951D661791BD /* libPods-Kilometers.a */; };
+		954A0E52E3A8E6805BBF5C56 /* Pods_KilometersTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB6E21EF4BC9414BC1CB42C9 /* Pods_KilometersTests.framework */; };
+		E2593ACD9A5C1D68B7FE876E /* Pods_Kilometers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C93167612E55D5DC3CCF318 /* Pods_Kilometers.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,8 +40,9 @@
 
 /* Begin PBXFileReference section */
 		19808086CFAF1DEEB3F12280 /* Pods-KilometersTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KilometersTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KilometersTests/Pods-KilometersTests.release.xcconfig"; sourceTree = "<group>"; };
+		2A0F106DEE3BE7ADE6B8B8CD /* Pods_KilometersUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KilometersUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B6A9A52AD5719EF392AD9C0 /* Pods-KilometersUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KilometersUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KilometersUITests/Pods-KilometersUITests.release.xcconfig"; sourceTree = "<group>"; };
-		5119BB968B71951D661791BD /* libPods-Kilometers.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Kilometers.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C93167612E55D5DC3CCF318 /* Pods_Kilometers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kilometers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BC5F2A11CD7CC5800568BC6 /* Kilometers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kilometers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BC5F2A41CD7CC5800568BC6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5BC5F2A61CD7CC5800568BC6 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -57,11 +58,10 @@
 		5BC5F2C61CD7CC5800568BC6 /* iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iosUITests.swift; sourceTree = "<group>"; };
 		5BC5F2C81CD7CC5800568BC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5BC5F2D41CD7CDDE00568BC6 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		8D2A65188B4191C80FCFAAB9 /* libPods-KilometersTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KilometersTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		906A5F2BE3BAF3AA37AEB811 /* libPods-KilometersUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KilometersUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		941707B72441D3F3F29D89ED /* Pods-KilometersTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KilometersTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KilometersTests/Pods-KilometersTests.debug.xcconfig"; sourceTree = "<group>"; };
 		AD73AA877A8A45B7B1B5924C /* Pods-KilometersUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KilometersUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KilometersUITests/Pods-KilometersUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		AF1DD8A3B031C73D1420BC42 /* Pods-Kilometers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kilometers.release.xcconfig"; path = "Pods/Target Support Files/Pods-Kilometers/Pods-Kilometers.release.xcconfig"; sourceTree = "<group>"; };
+		EB6E21EF4BC9414BC1CB42C9 /* Pods_KilometersTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KilometersTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED9C1D4C32F9D2E29268000B /* Pods-Kilometers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kilometers.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Kilometers/Pods-Kilometers.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -71,7 +71,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5BC5F2D51CD7CDDE00568BC6 /* MapKit.framework in Frameworks */,
-				90BFD4182FD5134687FAAA96 /* libPods-Kilometers.a in Frameworks */,
+				E2593ACD9A5C1D68B7FE876E /* Pods_Kilometers.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,7 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D4CC51E974B4519B47AB7ED /* libPods-KilometersTests.a in Frameworks */,
+				954A0E52E3A8E6805BBF5C56 /* Pods_KilometersTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,7 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7909DE5C735DD3582CB645E2 /* libPods-KilometersUITests.a in Frameworks */,
+				49118F1ABF57FC95F97CBA8C /* Pods_KilometersUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,9 +97,9 @@
 		02DD2F1B36BCDDAAC920EE8C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5119BB968B71951D661791BD /* libPods-Kilometers.a */,
-				8D2A65188B4191C80FCFAAB9 /* libPods-KilometersTests.a */,
-				906A5F2BE3BAF3AA37AEB811 /* libPods-KilometersUITests.a */,
+				4C93167612E55D5DC3CCF318 /* Pods_Kilometers.framework */,
+				EB6E21EF4BC9414BC1CB42C9 /* Pods_KilometersTests.framework */,
+				2A0F106DEE3BE7ADE6B8B8CD /* Pods_KilometersUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
