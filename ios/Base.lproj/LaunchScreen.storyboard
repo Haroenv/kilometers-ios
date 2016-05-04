@@ -17,17 +17,47 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kilometers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VlK-D8-t9k">
-                                <rect key="frame" x="259" y="289" width="82" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ig5-SG-oFM">
+                                <rect key="frame" x="0.0" y="551" width="600" height="49"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <items/>
+                            </tabBar>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="XZz-Ef-9Sk">
+                                <rect key="frame" x="0.0" y="20" width="600" height="141"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="---" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wA2-o0-hE2">
+                                        <rect key="frame" x="289" y="0.0" width="23" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="-- km" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MYM-9a-bf6">
+                                        <rect key="frame" x="256" y="21" width="90" height="70"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="SW3-BQ-uup"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dmh-V1-4mX">
+                                        <rect key="frame" x="271" y="91" width="58" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="LY0-L7-VfO"/>
+                                        </constraints>
+                                        <state key="normal" title="check in"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="VlK-D8-t9k" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="1xu-TH-AdU"/>
-                            <constraint firstItem="VlK-D8-t9k" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="dRJ-sw-u3E"/>
+                            <constraint firstItem="XZz-Ef-9Sk" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" id="WVN-NE-8ca"/>
+                            <constraint firstItem="XZz-Ef-9Sk" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="Wbj-3S-39I"/>
+                            <constraint firstItem="Ig5-SG-oFM" firstAttribute="bottom" secondItem="xb3-aO-Qok" secondAttribute="top" id="XBZ-mt-BOT"/>
+                            <constraint firstItem="XZz-Ef-9Sk" firstAttribute="leading" secondItem="Ig5-SG-oFM" secondAttribute="leading" id="mZm-79-hpW"/>
+                            <constraint firstItem="XZz-Ef-9Sk" firstAttribute="trailing" secondItem="Ig5-SG-oFM" secondAttribute="trailing" id="pJ9-oh-aOA"/>
+                            <constraint firstAttribute="trailing" secondItem="XZz-Ef-9Sk" secondAttribute="trailing" id="qIG-68-W57"/>
                         </constraints>
                     </view>
                 </viewController>

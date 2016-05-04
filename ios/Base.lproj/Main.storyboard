@@ -119,7 +119,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="first" width="38" height="38"/>
-        <image name="second" width="38" height="38"/>
+        <image name="first" width="30" height="30"/>
+        <image name="second" width="32" height="31"/>
     </resources>
 </document>
