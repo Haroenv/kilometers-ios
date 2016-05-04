@@ -15,6 +15,7 @@
 		5BC5F2B11CD7CC5800568BC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BC5F2AF1CD7CC5800568BC6 /* LaunchScreen.storyboard */; };
 		5BC5F2BC1CD7CC5800568BC6 /* iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC5F2BB1CD7CC5800568BC6 /* iosTests.swift */; };
 		5BC5F2C71CD7CC5800568BC6 /* iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC5F2C61CD7CC5800568BC6 /* iosUITests.swift */; };
+		5BC5F2D51CD7CDDE00568BC6 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BC5F2D41CD7CDDE00568BC6 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		5BC5F2C21CD7CC5800568BC6 /* iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BC5F2C61CD7CC5800568BC6 /* iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iosUITests.swift; sourceTree = "<group>"; };
 		5BC5F2C81CD7CC5800568BC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BC5F2D41CD7CDDE00568BC6 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BC5F2D51CD7CDDE00568BC6 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +82,7 @@
 		5BC5F2981CD7CC5800568BC6 = {
 			isa = PBXGroup;
 			children = (
+				5BC5F2D41CD7CDDE00568BC6 /* MapKit.framework */,
 				5BC5F2A31CD7CC5800568BC6 /* ios */,
 				5BC5F2BA1CD7CC5800568BC6 /* iosTests */,
 				5BC5F2C51CD7CC5800568BC6 /* iosUITests */,
@@ -196,6 +200,14 @@
 				TargetAttributes = {
 					5BC5F2A01CD7CC5800568BC6 = {
 						CreatedOnToolsVersion = 7.3;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					5BC5F2B61CD7CC5800568BC6 = {
 						CreatedOnToolsVersion = 7.3;
