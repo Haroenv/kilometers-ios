@@ -29,6 +29,11 @@ class FirstViewController: UIViewController, CLLocationManagerDelegate {
     }
     
     func currentCity(location: CLLocation) {
+        map.removeAnnotations(map.annotations)
+        let annotation = MKPointAnnotation()
+        annotation.coordinate = CLLocationCoordinate2DMake(location.coordinate.latitude, location.coordinate.longitude)
+        annotation.title = "Current location"
+        map.addAnnotation(annotation)
         let geoCoder = CLGeocoder()
         geoCoder.reverseGeocodeLocation(location) {
             (placemarks, error) -> Void in
@@ -46,7 +51,7 @@ class FirstViewController: UIViewController, CLLocationManagerDelegate {
     
     func getQuickLocationUpdate() {
         // Request a location update
-        self.locationManager.requestLocation()
+        self.locationManager.startUpdatingLocation()
         // Note: requestLocation may timeout and produce an error if authorization has not yet been granted by the user
     }
     
@@ -62,9 +67,10 @@ class FirstViewController: UIViewController, CLLocationManagerDelegate {
         let region = MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1))
         
         map.setRegion(region, animated: true)
-        map.showsUserLocation = true
+//        map.showsUserLocation = true
         
         currentCity(location);
+        self.locationManager.stopUpdatingLocation()
     }
 }
 

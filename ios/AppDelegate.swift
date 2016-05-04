@@ -22,9 +22,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
         UIApplication.sharedApplication().registerUserNotificationSettings(notificationSettings)
         
         // Request background location permissions and register for visit monitoring
-        locationManager.delegate = self
+        //locationManager.delegate = self
         locationManager.requestAlwaysAuthorization()
-        locationManager.startMonitoringVisits()
+        //locationManager.startMonitoringVisits()
         
         return true
     }
