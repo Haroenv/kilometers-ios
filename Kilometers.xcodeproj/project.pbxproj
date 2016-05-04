@@ -36,7 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5BC5F2A11CD7CC5800568BC6 /* ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BC5F2A11CD7CC5800568BC6 /* Kilometers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kilometers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BC5F2A41CD7CC5800568BC6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5BC5F2A61CD7CC5800568BC6 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		5BC5F2A81CD7CC5800568BC6 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
@@ -44,10 +44,10 @@
 		5BC5F2AD1CD7CC5800568BC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5BC5F2B01CD7CC5800568BC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5BC5F2B21CD7CC5800568BC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5BC5F2B71CD7CC5800568BC6 /* iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BC5F2B71CD7CC5800568BC6 /* Kilometers.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Kilometers.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BC5F2BB1CD7CC5800568BC6 /* iosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iosTests.swift; sourceTree = "<group>"; };
 		5BC5F2BD1CD7CC5800568BC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5BC5F2C21CD7CC5800568BC6 /* iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BC5F2C21CD7CC5800568BC6 /* Kilometers.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Kilometers.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BC5F2C61CD7CC5800568BC6 /* iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iosUITests.swift; sourceTree = "<group>"; };
 		5BC5F2C81CD7CC5800568BC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5BC5F2D41CD7CDDE00568BC6 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -93,9 +93,9 @@
 		5BC5F2A21CD7CC5800568BC6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5BC5F2A11CD7CC5800568BC6 /* ios.app */,
-				5BC5F2B71CD7CC5800568BC6 /* iosTests.xctest */,
-				5BC5F2C21CD7CC5800568BC6 /* iosUITests.xctest */,
+				5BC5F2A11CD7CC5800568BC6 /* Kilometers.app */,
+				5BC5F2B71CD7CC5800568BC6 /* Kilometers.xctest */,
+				5BC5F2C21CD7CC5800568BC6 /* Kilometers.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -135,9 +135,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5BC5F2A01CD7CC5800568BC6 /* ios */ = {
+		5BC5F2A01CD7CC5800568BC6 /* Kilometers */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5BC5F2CB1CD7CC5800568BC6 /* Build configuration list for PBXNativeTarget "ios" */;
+			buildConfigurationList = 5BC5F2CB1CD7CC5800568BC6 /* Build configuration list for PBXNativeTarget "Kilometers" */;
 			buildPhases = (
 				5BC5F29D1CD7CC5800568BC6 /* Sources */,
 				5BC5F29E1CD7CC5800568BC6 /* Frameworks */,
@@ -147,14 +147,14 @@
 			);
 			dependencies = (
 			);
-			name = ios;
+			name = Kilometers;
 			productName = ios;
-			productReference = 5BC5F2A11CD7CC5800568BC6 /* ios.app */;
+			productReference = 5BC5F2A11CD7CC5800568BC6 /* Kilometers.app */;
 			productType = "com.apple.product-type.application";
 		};
-		5BC5F2B61CD7CC5800568BC6 /* iosTests */ = {
+		5BC5F2B61CD7CC5800568BC6 /* KilometersTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5BC5F2CE1CD7CC5800568BC6 /* Build configuration list for PBXNativeTarget "iosTests" */;
+			buildConfigurationList = 5BC5F2CE1CD7CC5800568BC6 /* Build configuration list for PBXNativeTarget "KilometersTests" */;
 			buildPhases = (
 				5BC5F2B31CD7CC5800568BC6 /* Sources */,
 				5BC5F2B41CD7CC5800568BC6 /* Frameworks */,
@@ -165,14 +165,14 @@
 			dependencies = (
 				5BC5F2B91CD7CC5800568BC6 /* PBXTargetDependency */,
 			);
-			name = iosTests;
+			name = KilometersTests;
 			productName = iosTests;
-			productReference = 5BC5F2B71CD7CC5800568BC6 /* iosTests.xctest */;
+			productReference = 5BC5F2B71CD7CC5800568BC6 /* Kilometers.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		5BC5F2C11CD7CC5800568BC6 /* iosUITests */ = {
+		5BC5F2C11CD7CC5800568BC6 /* KilometersUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5BC5F2D11CD7CC5800568BC6 /* Build configuration list for PBXNativeTarget "iosUITests" */;
+			buildConfigurationList = 5BC5F2D11CD7CC5800568BC6 /* Build configuration list for PBXNativeTarget "KilometersUITests" */;
 			buildPhases = (
 				5BC5F2BE1CD7CC5800568BC6 /* Sources */,
 				5BC5F2BF1CD7CC5800568BC6 /* Frameworks */,
@@ -183,9 +183,9 @@
 			dependencies = (
 				5BC5F2C41CD7CC5800568BC6 /* PBXTargetDependency */,
 			);
-			name = iosUITests;
+			name = KilometersUITests;
 			productName = iosUITests;
-			productReference = 5BC5F2C21CD7CC5800568BC6 /* iosUITests.xctest */;
+			productReference = 5BC5F2C21CD7CC5800568BC6 /* Kilometers.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -196,7 +196,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0730;
-				ORGANIZATIONNAME = punchtime;
+				ORGANIZATIONNAME = haroen.me;
 				TargetAttributes = {
 					5BC5F2A01CD7CC5800568BC6 = {
 						CreatedOnToolsVersion = 7.3;
@@ -220,7 +220,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 5BC5F29C1CD7CC5800568BC6 /* Build configuration list for PBXProject "ios" */;
+			buildConfigurationList = 5BC5F29C1CD7CC5800568BC6 /* Build configuration list for PBXProject "Kilometers" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -233,9 +233,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5BC5F2A01CD7CC5800568BC6 /* ios */,
-				5BC5F2B61CD7CC5800568BC6 /* iosTests */,
-				5BC5F2C11CD7CC5800568BC6 /* iosUITests */,
+				5BC5F2A01CD7CC5800568BC6 /* Kilometers */,
+				5BC5F2B61CD7CC5800568BC6 /* KilometersTests */,
+				5BC5F2C11CD7CC5800568BC6 /* KilometersUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -299,12 +299,12 @@
 /* Begin PBXTargetDependency section */
 		5BC5F2B91CD7CC5800568BC6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 5BC5F2A01CD7CC5800568BC6 /* ios */;
+			target = 5BC5F2A01CD7CC5800568BC6 /* Kilometers */;
 			targetProxy = 5BC5F2B81CD7CC5800568BC6 /* PBXContainerItemProxy */;
 		};
 		5BC5F2C41CD7CC5800568BC6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 5BC5F2A01CD7CC5800568BC6 /* ios */;
+			target = 5BC5F2A01CD7CC5800568BC6 /* Kilometers */;
 			targetProxy = 5BC5F2C31CD7CC5800568BC6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -421,7 +421,7 @@
 				INFOPLIST_FILE = ios/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.haroen.kilometers;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Kilometers;
 				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
@@ -435,7 +435,7 @@
 				INFOPLIST_FILE = ios/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.haroen.kilometers;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Kilometers;
 				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
@@ -447,8 +447,8 @@
 				INFOPLIST_FILE = iosTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.punchtime.iosTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ios.app/ios";
+				PRODUCT_NAME = Kilometers;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kilometers.app/Kilometers";
 			};
 			name = Debug;
 		};
@@ -459,8 +459,8 @@
 				INFOPLIST_FILE = iosTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.punchtime.iosTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ios.app/ios";
+				PRODUCT_NAME = Kilometers;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kilometers.app/Kilometers";
 			};
 			name = Release;
 		};
@@ -470,7 +470,7 @@
 				INFOPLIST_FILE = iosUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.punchtime.iosUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Kilometers;
 				TEST_TARGET_NAME = ios;
 			};
 			name = Debug;
@@ -481,7 +481,7 @@
 				INFOPLIST_FILE = iosUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.punchtime.iosUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Kilometers;
 				TEST_TARGET_NAME = ios;
 			};
 			name = Release;
@@ -489,7 +489,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5BC5F29C1CD7CC5800568BC6 /* Build configuration list for PBXProject "ios" */ = {
+		5BC5F29C1CD7CC5800568BC6 /* Build configuration list for PBXProject "Kilometers" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5BC5F2C91CD7CC5800568BC6 /* Debug */,
@@ -498,7 +498,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5BC5F2CB1CD7CC5800568BC6 /* Build configuration list for PBXNativeTarget "ios" */ = {
+		5BC5F2CB1CD7CC5800568BC6 /* Build configuration list for PBXNativeTarget "Kilometers" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5BC5F2CC1CD7CC5800568BC6 /* Debug */,
@@ -507,7 +507,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5BC5F2CE1CD7CC5800568BC6 /* Build configuration list for PBXNativeTarget "iosTests" */ = {
+		5BC5F2CE1CD7CC5800568BC6 /* Build configuration list for PBXNativeTarget "KilometersTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5BC5F2CF1CD7CC5800568BC6 /* Debug */,
@@ -516,7 +516,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5BC5F2D11CD7CC5800568BC6 /* Build configuration list for PBXNativeTarget "iosUITests" */ = {
+		5BC5F2D11CD7CC5800568BC6 /* Build configuration list for PBXNativeTarget "KilometersUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5BC5F2D21CD7CC5800568BC6 /* Debug */,

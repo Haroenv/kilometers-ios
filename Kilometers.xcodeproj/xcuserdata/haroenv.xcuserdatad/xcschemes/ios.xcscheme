@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "5BC5F2A01CD7CC5800568BC6"
-               BuildableName = "ios.app"
-               BlueprintName = "ios"
-               ReferencedContainer = "container:ios.xcodeproj">
+               BuildableName = "Kilometers.app"
+               BlueprintName = "Kilometers"
+               ReferencedContainer = "container:Kilometers.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "5BC5F2B61CD7CC5800568BC6"
-               BuildableName = "iosTests.xctest"
-               BlueprintName = "iosTests"
-               ReferencedContainer = "container:ios.xcodeproj">
+               BuildableName = "Kilometers.xctest"
+               BlueprintName = "KilometersTests"
+               ReferencedContainer = "container:Kilometers.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "5BC5F2C11CD7CC5800568BC6"
-               BuildableName = "iosUITests.xctest"
-               BlueprintName = "iosUITests"
-               ReferencedContainer = "container:ios.xcodeproj">
+               BuildableName = "Kilometers.xctest"
+               BlueprintName = "KilometersUITests"
+               ReferencedContainer = "container:Kilometers.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -53,9 +53,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5BC5F2A01CD7CC5800568BC6"
-            BuildableName = "ios.app"
-            BlueprintName = "ios"
-            ReferencedContainer = "container:ios.xcodeproj">
+            BuildableName = "Kilometers.app"
+            BlueprintName = "Kilometers"
+            ReferencedContainer = "container:Kilometers.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5BC5F2A01CD7CC5800568BC6"
-            BuildableName = "ios.app"
-            BlueprintName = "ios"
-            ReferencedContainer = "container:ios.xcodeproj">
+            BuildableName = "Kilometers.app"
+            BlueprintName = "Kilometers"
+            ReferencedContainer = "container:Kilometers.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,9 +95,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5BC5F2A01CD7CC5800568BC6"
-            BuildableName = "ios.app"
-            BlueprintName = "ios"
-            ReferencedContainer = "container:ios.xcodeproj">
+            BuildableName = "Kilometers.app"
+            BlueprintName = "Kilometers"
+            ReferencedContainer = "container:Kilometers.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
