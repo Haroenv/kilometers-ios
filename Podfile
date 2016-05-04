@@ -4,7 +4,7 @@
 # use_frameworks!
 
 target 'Kilometers' do
-
+    pod 'Firebase', '~> 2.5'
 end
 
 target 'KilometersTests' do
