@@ -8,9 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		49118F1ABF57FC95F97CBA8C /* Pods_KilometersUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A0F106DEE3BE7ADE6B8B8CD /* Pods_KilometersUITests.framework */; };
+		5B3E53B01CDBA3A8004FB734 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3E53AF1CDBA3A8004FB734 /* LoginViewController.swift */; };
 		5BC5F2A51CD7CC5800568BC6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC5F2A41CD7CC5800568BC6 /* AppDelegate.swift */; };
-		5BC5F2A71CD7CC5800568BC6 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC5F2A61CD7CC5800568BC6 /* FirstViewController.swift */; };
-		5BC5F2A91CD7CC5800568BC6 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC5F2A81CD7CC5800568BC6 /* SecondViewController.swift */; };
+		5BC5F2A71CD7CC5800568BC6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC5F2A61CD7CC5800568BC6 /* HomeViewController.swift */; };
+		5BC5F2A91CD7CC5800568BC6 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC5F2A81CD7CC5800568BC6 /* SettingsViewController.swift */; };
 		5BC5F2AC1CD7CC5800568BC6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BC5F2AA1CD7CC5800568BC6 /* Main.storyboard */; };
 		5BC5F2AE1CD7CC5800568BC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BC5F2AD1CD7CC5800568BC6 /* Assets.xcassets */; };
 		5BC5F2B11CD7CC5800568BC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BC5F2AF1CD7CC5800568BC6 /* LaunchScreen.storyboard */; };
@@ -43,10 +44,11 @@
 		2A0F106DEE3BE7ADE6B8B8CD /* Pods_KilometersUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KilometersUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B6A9A52AD5719EF392AD9C0 /* Pods-KilometersUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KilometersUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KilometersUITests/Pods-KilometersUITests.release.xcconfig"; sourceTree = "<group>"; };
 		4C93167612E55D5DC3CCF318 /* Pods_Kilometers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kilometers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B3E53AF1CDBA3A8004FB734 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		5BC5F2A11CD7CC5800568BC6 /* Kilometers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kilometers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BC5F2A41CD7CC5800568BC6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5BC5F2A61CD7CC5800568BC6 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		5BC5F2A81CD7CC5800568BC6 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		5BC5F2A61CD7CC5800568BC6 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		5BC5F2A81CD7CC5800568BC6 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		5BC5F2AB1CD7CC5800568BC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5BC5F2AD1CD7CC5800568BC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5BC5F2B01CD7CC5800568BC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -131,8 +133,9 @@
 			isa = PBXGroup;
 			children = (
 				5BC5F2A41CD7CC5800568BC6 /* AppDelegate.swift */,
-				5BC5F2A61CD7CC5800568BC6 /* FirstViewController.swift */,
-				5BC5F2A81CD7CC5800568BC6 /* SecondViewController.swift */,
+				5BC5F2A61CD7CC5800568BC6 /* HomeViewController.swift */,
+				5BC5F2A81CD7CC5800568BC6 /* SettingsViewController.swift */,
+				5B3E53AF1CDBA3A8004FB734 /* LoginViewController.swift */,
 				5BC5F2AA1CD7CC5800568BC6 /* Main.storyboard */,
 				5BC5F2AD1CD7CC5800568BC6 /* Assets.xcassets */,
 				5BC5F2AF1CD7CC5800568BC6 /* LaunchScreen.storyboard */,
@@ -443,9 +446,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5BC5F2A91CD7CC5800568BC6 /* SecondViewController.swift in Sources */,
+				5B3E53B01CDBA3A8004FB734 /* LoginViewController.swift in Sources */,
+				5BC5F2A91CD7CC5800568BC6 /* SettingsViewController.swift in Sources */,
 				5BC5F2A51CD7CC5800568BC6 /* AppDelegate.swift in Sources */,
-				5BC5F2A71CD7CC5800568BC6 /* FirstViewController.swift in Sources */,
+				5BC5F2A71CD7CC5800568BC6 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

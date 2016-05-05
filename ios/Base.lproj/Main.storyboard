@@ -9,7 +9,7 @@
         <!--Home-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
-                <viewController id="9pv-A4-QxB" userLabel="Home" customClass="FirstViewController" customModule="Kilometers" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="9pv-A4-QxB" userLabel="Home" customClass="HomeViewController" customModule="Kilometers" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
                         <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
@@ -76,7 +76,7 @@
         <!--Settings-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
-                <viewController id="8rJ-Kc-sve" userLabel="Settings" customClass="SecondViewController" customModule="Kilometers" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="8rJ-Kc-sve" userLabel="Settings" customClass="SettingsViewController" customModule="Kilometers" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
                         <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
@@ -95,7 +95,7 @@
         <!--Login-->
         <scene sceneID="bgx-ib-QnI">
             <objects>
-                <viewController id="C1R-JS-y8p" userLabel="Login" sceneMemberID="viewController">
+                <viewController id="C1R-JS-y8p" userLabel="Login" customClass="LoginViewController" customModule="Kilometers" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="k2H-I8-rvs"/>
                         <viewControllerLayoutGuide type="bottom" id="rM6-Z2-isS"/>

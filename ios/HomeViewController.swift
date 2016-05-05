@@ -8,7 +8,7 @@ import UIKit
 import CoreLocation
 import MapKit
 
-class FirstViewController: UIViewController, CLLocationManagerDelegate {
+class HomeViewController: UIViewController, CLLocationManagerDelegate {
     
     @IBOutlet weak var map: MKMapView!
     @IBOutlet weak var city: UILabel!
