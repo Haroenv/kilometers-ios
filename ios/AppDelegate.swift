@@ -13,12 +13,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
 
     var window: UIWindow?
     
+    let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
+    
     let locationManager = CLLocationManager()
     
     let root = Firebase(url: "https://kilometers.firebaseio.com")
     
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        root.observeAuthEventWithBlock({ authData in
+            if authData != nil {
+            } else {
+                let homeViewController = self.mainStoryboard.instantiateViewControllerWithIdentifier("MainView")
+                self.window?.rootViewController?.presentViewController(homeViewController, animated: true, completion: nil)
+            }
+        })
         
         // Request permission to present notifications
         let notificationSettings = UIUserNotificationSettings(forTypes: UIUserNotificationType.Alert, categories: nil)

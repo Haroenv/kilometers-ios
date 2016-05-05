@@ -37,7 +37,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="-- km" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MYM-9a-bf6">
                                         <rect key="frame" x="256" y="21" width="90" height="70"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="70" id="SW3-BQ-uup"/>
+                                            <constraint firstAttribute="height" constant="70" id="uXk-6a-ftI"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -46,7 +46,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dmh-V1-4mX">
                                         <rect key="frame" x="271" y="91" width="58" height="50"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="LY0-L7-VfO"/>
+                                            <constraint firstAttribute="height" constant="50" id="iQ4-Km-VDm"/>
                                         </constraints>
                                         <state key="normal" title="check in"/>
                                     </button>
