@@ -45,7 +45,13 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         if (textField.tag == loginEmail.tag) {
             loginPassword.becomeFirstResponder()
         } else if (textField.tag == loginPassword.tag) {
-            print("login with password")
+            root.authUser(loginEmail.text, password: loginPassword.text, withCompletionBlock: { error, authData in
+                if error != nil {
+                    // There was an error logging in to this account
+                } else {
+                    // We are now logged in
+                }
+            })
         } else if (textField.tag == registerEmail.tag) {
             registerPassword.becomeFirstResponder()
         } else if (textField.tag == registerPassword.tag) {
