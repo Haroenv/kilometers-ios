@@ -29,15 +29,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
         locationManager.requestAlwaysAuthorization()
         //locationManager.startMonitoringVisits()
         
-        root.createUser("bobtony@example.com", password: "correcthorsebatterystaple", withValueCompletionBlock: { error, result in
-            if error != nil {
-                // There was an error creating the account
-                print("not logged in :(")
-            } else {
-                let uid = result["uid"] as? String
-                print("Successfully created user account with uid: \(uid)")
-            }
-        })
+//        root.createUser("bobtony@example.com", password: "correcthorsebatterystaple", withValueCompletionBlock: { error, result in
+//            if error != nil {
+//                // There was an error creating the account
+//                print("not logged in :(")
+//            } else {
+//                let uid = result["uid"] as? String
+//                print("Successfully created user account with uid: \(uid)")
+//            }
+//        })
         
         return true
     }
