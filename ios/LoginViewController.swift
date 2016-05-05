@@ -37,7 +37,15 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     }
     
     func applicationDidBecomeActive(notification: NSNotification) {
-        print("back active")
+        root.observeAuthEventWithBlock({ authData in
+            if authData != nil {
+                print("authdata: \(authData.uid)")
+                let homeViewController = self.storyboard?.instantiateViewControllerWithIdentifier("MainView")
+                self.presentViewController(homeViewController!, animated: true, completion: nil)
+            } else {
+                print("not logged in")
+            }
+        })
     }
     
     func shake(textField: UITextField) {
