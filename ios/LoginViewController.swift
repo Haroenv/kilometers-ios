@@ -5,8 +5,11 @@
 //
 
 import UIKit
+import Firebase
 
 class LoginViewController: UIViewController, UITextFieldDelegate {
+    
+    let root = Firebase(url: "https://kilometers.firebaseio.com")
     
     @IBOutlet weak var loginEmail: UITextField!
     @IBOutlet weak var loginPassword: UITextField!
@@ -25,18 +28,36 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         loginPassword.tag = 101
         registerEmail.tag = 102
         registerPassword.tag = 103
+        
+        NSNotificationCenter.defaultCenter().addObserver(
+            self,
+            selector: #selector(UIApplicationDelegate.applicationDidBecomeActive(_:)),
+            name: UIApplicationDidBecomeActiveNotification,
+            object: nil)
+    }
+    
+    func applicationDidBecomeActive(notification: NSNotification) {
+        print("back active")
     }
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         if (textField.tag == loginEmail.tag) {
-            print("go to password field")
+            loginPassword.becomeFirstResponder()
         } else if (textField.tag == loginPassword.tag) {
             print("login with password")
         } else if (textField.tag == registerEmail.tag) {
-            print("go to password field")
+            registerPassword.becomeFirstResponder()
         } else if (textField.tag == registerPassword.tag) {
-            print("create account")
+            root.createUser(registerEmail.text, password: registerPassword.text, withValueCompletionBlock: { error, result in
+                if error != nil {
+                    // There was an error creating the account
+                    print("not logged in :(")
+                } else {
+                    let uid = result["uid"] as? String
+                    print("Successfully created user account with uid: \(uid)")
+                }
+            })
             
         }
         return true
