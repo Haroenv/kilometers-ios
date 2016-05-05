@@ -6,7 +6,7 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var loginEmail: UITextField!
     @IBOutlet weak var loginPassword: UITextField!
@@ -15,8 +15,11 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("we are in the login screen")
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        loginEmail.delegate = self
+        loginPassword.delegate = self
+        registerEmail.delegate = self
+        registerPassword.delegate = self
     }
     
     override func didReceiveMemoryWarning() {
