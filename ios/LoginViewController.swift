@@ -40,6 +40,16 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         print("back active")
     }
     
+    func shake(textField: UITextField) {
+        let animation = CABasicAnimation(keyPath: "position")
+        animation.duration = 0.07
+        animation.repeatCount = 2
+        animation.autoreverses = true
+        animation.fromValue = NSValue(CGPoint: CGPointMake(textField.center.x - 8, textField.center.y))
+        animation.toValue = NSValue(CGPoint: CGPointMake(textField.center.x + 8, textField.center.y))
+        textField.layer.addAnimation(animation, forKey: "position")
+    }
+    
     func textFieldShouldReturn(textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         if (textField.tag == loginEmail.tag) {
@@ -47,9 +57,10 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         } else if (textField.tag == loginPassword.tag) {
             root.authUser(loginEmail.text, password: loginPassword.text, withCompletionBlock: { error, authData in
                 if error != nil {
-                    // There was an error logging in to this account
+                    self.shake(textField)
+                    textField.becomeFirstResponder()
                 } else {
-                    // We are now logged in
+                    print("Successfully logged in with uid: \(authData.uid)")
                 }
             })
         } else if (textField.tag == registerEmail.tag) {
@@ -57,8 +68,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         } else if (textField.tag == registerPassword.tag) {
             root.createUser(registerEmail.text, password: registerPassword.text, withValueCompletionBlock: { error, result in
                 if error != nil {
-                    // There was an error creating the account
-                    print("not logged in :(")
+                     self.shake(textField)
+                     textField.becomeFirstResponder()
                 } else {
                     let uid = result["uid"] as? String
                     print("Successfully created user account with uid: \(uid)")
