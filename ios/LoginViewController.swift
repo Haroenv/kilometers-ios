@@ -20,12 +20,26 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         loginPassword.delegate = self
         registerEmail.delegate = self
         registerPassword.delegate = self
+        
+        loginEmail.tag = 100
+        loginPassword.tag = 101
+        registerEmail.tag = 102
+        registerPassword.tag = 103
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        if (textField.tag == loginEmail.tag) {
+            print("go to password field")
+        } else if (textField.tag == loginPassword.tag) {
+            print("login with password")
+        } else if (textField.tag == registerEmail.tag) {
+            print("go to password field")
+        } else if (textField.tag == registerPassword.tag) {
+            print("create account")
+            
+        }
+        return true
     }
-    
     
 }
