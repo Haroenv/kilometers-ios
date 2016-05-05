@@ -15,6 +15,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
     
     let locationManager = CLLocationManager()
     
+    let root = Firebase(url: "https://kilometers.firebaseio.com")
+    
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         
@@ -26,6 +28,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
         //locationManager.delegate = self
         locationManager.requestAlwaysAuthorization()
         //locationManager.startMonitoringVisits()
+        
+        root.observeEventType(.Value, withBlock: {
+            snapshot in
+            print("\(snapshot.key) -> \(snapshot.value)")
+        })
         
         return true
     }
