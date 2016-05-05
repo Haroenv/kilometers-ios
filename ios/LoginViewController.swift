@@ -8,6 +8,11 @@ import UIKit
 
 class LoginViewController: UIViewController {
     
+    @IBOutlet weak var loginEmail: UITextField!
+    @IBOutlet weak var loginPassword: UITextField!
+    @IBOutlet weak var registerEmail: UITextField!
+    @IBOutlet weak var registerPassword: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         print("we are in the login screen")

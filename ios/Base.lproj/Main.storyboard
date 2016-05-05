@@ -123,6 +123,9 @@
                                                         <rect key="frame" x="20" y="0.0" width="560" height="30"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next"/>
+                                                        <connections>
+                                                            <outlet property="delegate" destination="Hcu-cR-piH" id="dLv-o1-KSU"/>
+                                                        </connections>
                                                     </textField>
                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cbW-tN-sqZ">
                                                         <rect key="frame" x="20" y="30" width="560" height="30"/>
@@ -179,6 +182,12 @@
                             <constraint firstItem="hgQ-r5-mL0" firstAttribute="leading" secondItem="luX-x0-ep8" secondAttribute="leadingMargin" constant="-20" id="rYE-cB-NaR"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="loginEmail" destination="p6r-Hy-6n9" id="OxT-w1-5zc"/>
+                        <outlet property="loginPassword" destination="cbW-tN-sqZ" id="Qld-U1-pZI"/>
+                        <outlet property="registerEmail" destination="Hcu-cR-piH" id="l8J-Qw-BG1"/>
+                        <outlet property="registerPassword" destination="wrU-gr-hds" id="oPm-uY-o02"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DTP-lb-Reg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
