@@ -24,8 +24,12 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate {
         
         // Set the delegate
         self.locationManager.delegate = self
-        
-        getQuickLocationUpdate()
+
+        NSNotificationCenter.defaultCenter().addObserver(
+            self,
+            selector: #selector(UIApplicationDelegate.applicationDidBecomeActive(_:)),
+            name: UIApplicationDidBecomeActiveNotification,
+            object: nil)
     }
     
     func currentCity(location: CLLocation) {
@@ -49,10 +53,13 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate {
         }
     }
     
+    func applicationDidBecomeActive(notification: NSNotification) {
+        getQuickLocationUpdate()
+    }
+    
     func getQuickLocationUpdate() {
         // Request a location update
         self.locationManager.startUpdatingLocation()
-        // Note: requestLocation may timeout and produce an error if authorization has not yet been granted by the user
     }
     
     func locationManager(manager: CLLocationManager, didFailWithError error: NSError) {
