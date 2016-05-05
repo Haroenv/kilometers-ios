@@ -24,7 +24,8 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate {
         
         // Set the delegate
         self.locationManager.delegate = self
-
+        
+        getQuickLocationUpdate()
         NSNotificationCenter.defaultCenter().addObserver(
             self,
             selector: #selector(UIApplicationDelegate.applicationDidBecomeActive(_:)),
