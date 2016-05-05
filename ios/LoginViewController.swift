@@ -66,7 +66,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             root.authUser(loginEmail.text, password: loginPassword.text, withCompletionBlock: { error, authData in
                 if error != nil {
                     self.shake(textField)
-                    textField.becomeFirstResponder()
                 } else {
                     print("Successfully logged in with uid: \(authData.uid)")
                 }
@@ -77,7 +76,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             root.createUser(registerEmail.text, password: registerPassword.text, withValueCompletionBlock: { error, result in
                 if error != nil {
                      self.shake(textField)
-                     textField.becomeFirstResponder()
                 } else {
                     let uid = result["uid"] as? String
                     print("Successfully created user account with uid: \(uid)")
