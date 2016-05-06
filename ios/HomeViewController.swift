@@ -16,6 +16,10 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate {
     @IBOutlet weak var distance: UILabel!
     var locationManager: CLLocationManager!
     
+    var currentLatitude: CLLocationDegrees = 0.0
+    var currentLongitude: CLLocationDegrees = 0.0
+    var currentCity: String = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Create a location manager object
@@ -46,19 +50,21 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate {
             
             var placeMark: CLPlacemark!
             placeMark = placeArray?[0]
-            if placeMark != nil {
-                if let current = placeMark.addressDictionary?["City"] as? NSString {
-                    self.city.text = current as String
-                    self.distance.text = "\(0) km" as String
-                }
+            
+            // FIXME: check if there is internet
+            if let current = placeMark.addressDictionary?["City"] as? NSString {
+                self.city.text = current as String
+                self.currentCity = current as String
+                self.distance.text = "\(0) km" as String
             } else {
-                // FIXME: say that the network is off
+                print("some error")
             }
         }
     }
     
     @IBAction func checkin(sender: UIButton) {
         getQuickLocationUpdate()
+        print("city: \(currentCity)")
         // FIXME: check in here
     }
     
