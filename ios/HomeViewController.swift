@@ -16,7 +16,6 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate {
     @IBOutlet weak var distance: UILabel!
     var locationManager: CLLocationManager!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Create a location manager object
@@ -58,6 +57,11 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate {
         }
     }
     
+    @IBAction func checkin(sender: UIButton) {
+        getQuickLocationUpdate()
+        // FIXME: check in here
+    }
+    
     func applicationDidBecomeActive(notification: NSNotification) {
         getQuickLocationUpdate()
     }
@@ -79,7 +83,7 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate {
         let region = MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1))
         
         map.setRegion(region, animated: true)
-//        map.showsUserLocation = true
+        // map.showsUserLocation = true
         
         currentCity(location);
         self.locationManager.stopUpdatingLocation()

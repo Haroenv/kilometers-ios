@@ -42,11 +42,15 @@
                                             <constraint firstAttribute="height" constant="50" id="xZB-Aa-7oh"/>
                                         </constraints>
                                         <state key="normal" title="check in"/>
+                                        <connections>
+                                            <action selector="checkin:" destination="9pv-A4-QxB" eventType="primaryActionTriggered" id="emD-4A-c6k"/>
+                                        </connections>
                                     </button>
                                     <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="hX8-Oh-qQE">
                                         <rect key="frame" x="0.0" y="140" width="600" height="391"/>
                                     </mapView>
                                 </subviews>
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstItem="RVK-QD-8qg" firstAttribute="leading" secondItem="hX8-Oh-qQE" secondAttribute="leading" id="4XR-f7-GIn"/>
                                     <constraint firstItem="RVK-QD-8qg" firstAttribute="leading" secondItem="Pjg-6B-LC6" secondAttribute="leading" id="9al-4A-LOt"/>
