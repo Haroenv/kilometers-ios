@@ -58,6 +58,7 @@
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="Pjg-6B-LC6" firstAttribute="bottom" secondItem="4ug-Mw-9AY" secondAttribute="top" id="1Dm-RV-0Ez"/>
                             <constraint firstItem="Pjg-6B-LC6" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="-20" id="4aH-30-hBw"/>
