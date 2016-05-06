@@ -47,9 +47,13 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate {
             
             var placeMark: CLPlacemark!
             placeMark = placeArray?[0]
-            if let current = placeMark.addressDictionary?["City"] as? NSString {
-                self.city.text = current as String
-                self.distance.text = "\(0) km" as String
+            if placeMark != nil {
+                if let current = placeMark.addressDictionary?["City"] as? NSString {
+                    self.city.text = current as String
+                    self.distance.text = "\(0) km" as String
+                }
+            } else {
+                // FIXME: say that the network is off
             }
         }
     }
